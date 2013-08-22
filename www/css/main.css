@@ -1,0 +1,197 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+body {
+  color: #5a5a5a;
+}
+
+.brand {
+  margin-left: 15px !important;
+  /*text-transform: uppercase;*/
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  margin-top: 20px;
+  margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+}
+
+.navbar-wrapper .navbar {
+
+}
+
+/* Remove border and change up box shadow for more contrast */
+.navbar .navbar-inner {
+  border: 0;
+  -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+     -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+          box-shadow: 0 2px 10px rgba(0,0,0,.25);
+}
+
+/* Downsize the brand/project name a bit */
+.navbar .brand {
+  padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+}
+
+/* Navbar links: increase padding for taller navbar */
+.navbar .nav > li > a {
+  padding: 15px 20px;
+}
+
+/* Offset the responsive button for proper vertical alignment */
+.navbar .btn-navbar {
+  margin-top: 10px;
+}
+
+
+/* MARQUEE
+-------------------------------------------------- */
+.marquee {
+  margin-bottom: 60px;
+  height: 500px;
+  background-image: url("/img/pages/landing/marquee.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.marquee-caption {
+  padding: 0 20px;
+  margin: 180px auto auto 0;
+
+  line-height: 1.25;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,.4);
+  text-align: center;
+
+  /*text-transform: uppercase;*/
+}
+
+.marquee-head {
+  font-size: 48.5px;
+}
+
+.marquee-pitch {
+  margin-top: 20px;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+/* Center align the text within the three columns below the carousel */
+.marketing-heading {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+.marketing-row {
+  margin-top: 50px;
+}
+
+.marketing-row.first {
+  margin-top: 20px;
+}
+
+.marketing-item {
+  text-align: center;
+}
+
+.marketing-item-heading {
+  font-size: 23.5px;
+  line-height: 33px;
+  font-weight: normal;
+}
+
+.marketing-item-image {
+  width: 150px;
+}
+
+
+/* Featurettes
+------------------------- */
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+.featurette {
+  overflow: hidden;
+}
+
+.featurette-image {
+  margin-top: 20px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+  margin-bottom: 100px;
+}
+
+.featurette-lead p,
+.featurette-lead li {
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 30px;
+}
+
+.featurette-lead p {
+  margin-top: 15px;
+}
+
+.featurette-lead ul {
+  margin-top: -5px;
+}
+
+/* Give some space on the sides of the floated elements so text doesn't run right into it. */
+.featurette-image.pull-left {
+  margin-right: 40px;
+}
+
+.featurette-image.pull-right {
+  margin-left: 40px;
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+/* Contacts
+------------------------- */
+.contacts {
+  /*background: #3498db;*/
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contacts input {
+  border-radius: 0;
+}
+
+.contacts .phone,
+.contacts .email {
+  margin-top: 5px;
+}
+
+
+/* Footer
+------------------------- */
+.footer {
+  color: #fff;
+  margin-top: 100px;
+  min-height: 200px;
+  background: #2c3e50;
+}
+
+

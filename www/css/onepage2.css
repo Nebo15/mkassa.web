@@ -1,0 +1,264 @@
+/*
+ * Beaker - Responsive Landing Page - V.1.0
+ * Author: Shy Markets
+ * Author URL: http://creativemarket.com/shymarkets
+ * All Right Reserved
+ * Credits:
+ * * http://twitter.github.com/bootstrap/
+ * * http://fortawesome.github.com/Font-Awesome/
+ **/
+
+/*************************************************************
+                         google font
+**************************************************************/
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,Ubuntu:300&subset=latin,cyrillic);
+
+/*************************************************************
+                    reset some defaults styles
+**************************************************************/
+html, body{
+  height:100%;
+}
+
+body {
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: 300;
+  color: rgb(124, 124, 124);
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  background-size:cover;
+}
+
+a {
+  color: rgb(50, 50, 50);
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+a:hover, a:focus {
+  color: rgb(219, 82, 47);
+  text-decoration: none;
+}
+
+p {
+  color: #000;
+  font-size:14px;
+}
+
+li {
+  font-size:13px;
+}
+/*
+.site-title {
+  margin-top: 5px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 30px;
+  display: inline-block;
+  margin-top: 34px;
+}
+
+.user {
+  margin-top: 34px;
+}
+.user a{
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 10px 15px;
+  border: 2px solid #fff;
+  display: inline-block;
+  color: #fff;
+
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+.user a:hover {
+  background: #fff;
+  color: rgb(219, 82, 47);
+}
+*/
+.header-description {
+  margin-top: 90px;
+  font-family: Roboto;
+}
+.header-description h1 {
+  font-weight: 100;
+  font-size: 72px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0px 12px rgba(36, 36, 36, 0.55);
+  padding: 0px 0 10px 0;
+  text-align: left;
+}
+
+.header-description h2 {
+  font-weight: 100;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0px 12px rgba(36, 36, 36, 0.55);
+  padding: 0px 0 20px 0;
+  text-align: right;
+}
+
+.header-btn {
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 24px;
+  padding: 20px 35px;
+  border: 2px solid rgb(219, 82, 47);
+  background: rgb(219, 82, 47);
+  display: inline-block;
+
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+.header-btn:hover {
+  color: #fff;
+  background: transparent;
+}
+
+.header-features {
+  margin: -50px 110px 0 110px;
+  color: #fff;
+  display: block;
+}
+.header-feature{
+  padding: 20px 20px 5px 20px;
+}
+
+.subscribe {
+  color: #fff;
+  text-align: right;
+  padding-top:30px;
+}
+.subscribe input{
+  border: 1px solid #fff;
+  height: 42px;
+  width: 322px;
+
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-top-left-radius: 5px;
+  -moz-border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.btn-custom {
+  display: inline-block;
+  padding: 15px 32px 13px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 2px solid #0198e7;
+  background: #0198e7;
+
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-top-right-radius: 5px;
+  -moz-border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.btn-custom:hover {
+  border: 2px solid #0c2c42;
+  background:#0c2c42;
+}
+
+
+/*************************************************************
+                        responsive fix
+**************************************************************/
+/* Large desktop */
+@media (min-width: 1200px) {  }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .header-description h2 {
+    font-size: 83px;
+    line-height: 58px;
+  }
+  .header-features {
+    margin: 0 0 30px 0;
+  }
+  .header-feature {
+    margin: 0 0 30px 0;
+    padding: 0;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  body {
+    padding: 0;
+  }
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .header-description {
+    margin: 76px 0 80px;
+  }
+  .header-description h2 {
+    font-size: 66px;
+    line-height: 58px;
+  }
+  .header-btn {
+    margin-top: 74px;
+  }
+  .header-features {
+    margin: 0 0 30px 0;
+  }
+  .header-feature {
+    margin: 0 0 30px 0;
+    padding: 0;
+  }
+
+  blockquote > div {
+    padding: 0;
+  }
+  blockquote p {
+    font-size: 18px;
+  }
+
+  /* contact form */
+  .contact-form-inner {
+    padding: 18px !important;
+  }
+  .subscribe input {
+    height: 31px;
+    width: 154px;
+  }
+  .btn-custom {
+    padding: 9px 14px 8px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+}
