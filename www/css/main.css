@@ -189,6 +189,13 @@ li {
   background:#0c2c42;
 }
 
+#screen {
+  width:396px;
+  height:400px;
+  position:absolute;
+  top:-40px;
+  left:-70px;
+}
 
 /*************************************************************
                         responsive fix
