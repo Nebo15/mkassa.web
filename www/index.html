@@ -1,126 +1,78 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<html lang="en"><head>
+    <meta charset="utf-8">
     <title>Мобильная касса</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Beaker - Responsive Landing Page">
+    <meta name="author" content="Shy Markets">
 
-    <!-- Use edge version of IE rendering engine, of Google Chome Frame rendering engine, if exists -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="Мобильная касса - это все, что вам нужно, чтобы начать принимать платежи в любой точке мира" />
-
-    <!-- Ajust to mobile devices -->
-    <meta name="viewport" content="width=1000"/>
-
-    <!-- Vendor style sheets -->
-    <link href="/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- Application style sheets -->
+    <!-- Le styles -->
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
     <link href="/css/main.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
 
-    <!-- Vendor scripts -->
-    <script src="/vendor/jquery/js/jquery-2.0.2.min.js"></script>
-    <script src="/vendor/bootstrap/js/bootstrap.js"></script>
+    <!--[if IE 7]>
+      <link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome-ie7.css" rel="stylesheet">
+    <![endif]-->
 
-    <style>
-      .btn-xlarge, input.input-xlarge {
-        padding: 18px 28px;
-        font-size: 22px;
-        line-height: normal;
-        -webkit-border-top-left-radius: 8px;
-        -webkit-border-bottom-left-radius: 8px;
-        -moz-border-radius-topleft: 8px;
-        -moz-border-radius-bottomleft: 8px;
-        border-top-left-radius: 8px;
-        border-bottom-left-radius: 8px;
-      }
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="//cdn.jsdelivr.net/html5shiv/3.6.1/html5shiv.min.js"></script>
+    <![endif]-->
 
-      input.input-xlarge {
-        padding: 22px 28px;
-        width: 16em;
-      }
+  <style type="text/css"></style></head>
 
-      .scroll-to-call-to-action {
-        border-bottom:1px dashed;
-      }
+  <body style="overflow: auto;">
 
-      .scroll-to-call-to-action:hover {
-        border-bottom:1px solid;
-        text-decoration: none;
-      }
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="span8 offset2">
+            <div class="header-description">
+              <h1>Мобильная касса</h1>
+              <h2>Это всё, что вам нужно, чтобы принимать платежи в любой точке</h2>
+            </div>
+            <div class="header-feature" style="background-color: #e5e5e5;color: #000;">
+              <div class="row-fluid">
+                <div class="span9">
+                  <p>В мире есть много мест, где людям необходимо оплатить услуги, но у них нет доступа к терминалу. Мобильная касса создана для того, чтобы закрыть эту нишу и сделать терминал, который доступен повсеместно. При этом, терминалом может стать любой телефон или планшетный компьютер, что значительно удешевляет старт для бизнеса.</p>
+                  <p>Мобильная касса - это приложение, которое позволяет осуществлять платежи через мобильное устройство.</p>
+                  <p>Мобильная касса имеет ряд уникальных преимуществ:</p>
+                  <ul>
+                    <li>низкая стоимость оборудования;</li>
+                    <li>возможность работать в любой точке, где есть 2G/3G/Wi-Fi;</li>
+                    <li>использование персонализации и голосового набора для ускорения оплаты.</li>
+                  </ul>
+                  <p>Типичные прецеденты:</p>
+                  <ul>
+                    <li>пополнение баланса мобильного телефона через гида заграницей</li>
+                    <li>оплата кредита через проводника в поезде</li>
+                    <li>оплата домашнего интернета из кафе</li>
+                    <li>оплата интернет-сервиса через уличную точку в месте с большой проходимостью</li>
+                  </ul>
 
-      .featurette-divider {
-        margin: 50px;
-      }
-    </style>
+                  <section id="subscribe" class="subscribe">
+                    <form id="subsc-form" class="pull-left">
+                      <div class="input-append">
+                          <input type="text" name="subscriber" placeholder="Оставьте свой email или номер телефона" required>
+                          <button type="submit" class="btn-custom">Узнать подробности</button>
+                        </div>
+                    </form>
+                  </section>
+                </div>
+                <img src="/img/breezi2.png" style="height:400px;position:absolute;top:120px;left:790px;">
+              </div>
 
-    <!-- Application scripts -->
-    <!-- <script src="/Tools.js"></script> -->
 
-    <!-- Global init -->
-    <script>
-      function bindTooltips(selector) {
-        selector.find('.with-tooltip').each(function() {
-          var $this = $(this);
-          var placement = $this.data('placement') ? $this.data('placement') : 'bottom';
-          $this.tooltip({
-            placement: placement
-          });
-        });
-      }
-
-      $(function() {
-        // Init global tooltips
-        bindTooltips($('body'));
-      });
-    </script>
-  </head>
-  <body>
-    <div class="marquee" id="top">
-      <div class="marquee-container container">
-        <div class="marquee-caption">
-          <h1 class="marquee-head">Мобильная касса</h1>
-          <h2 class="marquee-pitch">Всё, что вам нужно, чтобы начать принимать платежи в любой точке мира</h2>
-          <form class="contacts" id="contact">
-          <div class="row">
-            <div class="input-append">
-              <input type="text" class="input-xlarge" id="inputEmail" placeholder="Email" >
-              <button class="btn btn-xlarge btn-success" type="button">Подключиться первым!</button>
             </div>
           </div>
-        </form>
-        </div>
-      </div>
-    </div>
-
-    <div class="container marketing">
-
-      <div class="featurette">
-        <img class="featurette-image pull-right" src="/img/pages/landing/icons/criteria.png" />
-        <div class="featurette-lead">
-          <p>В мире есть много мест, где людям необходимо оплатить услуги, но у них нет доступа к терминалу. Мы же хотим закрыть эту нишу и сделать терминал, который доступен повсеместно. При этом терминалом может стать любой телефон или планшетный компьютер, что значительно удешевляет старт для бизнеса.</p>
-
-          <p><a href="#top" class="scroll-to-call-to-action">Подключить</a></p>
         </div>
       </div>
 
-      <hr class="featurette-divider" id="providers" />
 
-      <div class="featurette">
-        <h2 class="featurette-heading">Автоматическое начисление фиксированной суммы в заданное время</h2>
-        <div class="featurette-lead">
-          <p>Помните, что и до какого числа нужно оплатить? Сколько за садик, сколько за интернет, сколько за кредит? Настройте автоматические платежи и не держите в голове лишней информации.</p>
-          <h3>Как это работает?</h3>
-          <p>Установите сумму, получателя и день месяца (или периодичность) с которой вы хотите осуществлять платеж. В заданное время schet.ru осуществит платеж за вас.</p>
-          <p><a href="#top" class="scroll-to-call-to-action">Подключить</a></p>
-        </div>
-      </div>
-    </div>
+    <!-- Le javascript
+    ================================================== -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
 
-    <footer class="footer">
-      <div class="container">
-        <p>&copy; Счёт.ру, 2013</p>
-      </div>
-    </footer>
-  </body>
+</body>
 </html>

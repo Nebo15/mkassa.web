@@ -1,197 +1,264 @@
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
+/*
+ * Beaker - Responsive Landing Page - V.1.0
+ * Author: Shy Markets
+ * Author URL: http://creativemarket.com/shymarkets
+ * All Right Reserved
+ * Credits:
+ * * http://twitter.github.com/bootstrap/
+ * * http://fortawesome.github.com/Font-Awesome/
+ **/
+
+/*************************************************************
+                         google font
+**************************************************************/
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,Ubuntu:300&subset=latin,cyrillic);
+
+/*************************************************************
+                    reset some defaults styles
+**************************************************************/
+html, body{
+  height:100%;
+}
+
 body {
-  color: #5a5a5a;
-}
-
-.brand {
-  margin-left: 15px !important;
-  /*text-transform: uppercase;*/
-}
-
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-.navbar-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  margin-top: 20px;
-  margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
-}
-
-.navbar-wrapper .navbar {
-
-}
-
-/* Remove border and change up box shadow for more contrast */
-.navbar .navbar-inner {
-  border: 0;
-  -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-     -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-          box-shadow: 0 2px 10px rgba(0,0,0,.25);
-}
-
-/* Downsize the brand/project name a bit */
-.navbar .brand {
-  padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+  font-family: Ubuntu;
   font-size: 16px;
-  font-weight: bold;
-  text-shadow: 0 -1px 0 rgba(0,0,0,.5);
-}
-
-/* Navbar links: increase padding for taller navbar */
-.navbar .nav > li > a {
-  padding: 15px 20px;
-}
-
-/* Offset the responsive button for proper vertical alignment */
-.navbar .btn-navbar {
-  margin-top: 10px;
-}
-
-
-/* MARQUEE
--------------------------------------------------- */
-.marquee {
-  margin-bottom: 60px;
-  height: 500px;
-  background-image: url("/img/pages/landing/marquee.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.marquee-caption {
-  padding: 0 20px;
-  margin: 180px auto auto 0;
-
-  line-height: 1.25;
-  color: #fff;
-  text-shadow: 0 1px 1px rgba(0,0,0,.4);
-  text-align: center;
-
-  /*text-transform: uppercase;*/
-}
-
-.marquee-head {
-  font-size: 48.5px;
-}
-
-.marquee-pitch {
-  margin-top: 20px;
-}
-
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-/* Center align the text within the three columns below the carousel */
-.marketing-heading {
-  font-size: 50px;
   font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
-  text-align: center;
+  color: rgb(124, 124, 124);
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  background-size:cover;
 }
 
-.marketing-row {
-  margin-top: 50px;
+a {
+  color: rgb(50, 50, 50);
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 
-.marketing-row.first {
-  margin-top: 20px;
+a:hover, a:focus {
+  color: rgb(219, 82, 47);
+  text-decoration: none;
 }
 
-.marketing-item {
-  text-align: center;
+p {
+  color: #000;
+  font-size:14px;
 }
 
-.marketing-item-heading {
-  font-size: 23.5px;
-  line-height: 33px;
-  font-weight: normal;
+li {
+  font-size:13px;
 }
-
-.marketing-item-image {
-  width: 150px;
-}
-
-
-/* Featurettes
-------------------------- */
-.featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
-}
-
-.featurette {
-  overflow: hidden;
-}
-
-.featurette-image {
-  margin-top: 20px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
-  margin-bottom: 100px;
-}
-
-.featurette-lead p,
-.featurette-lead li {
-  font-size: 21px;
-  font-weight: 200;
-  line-height: 30px;
-}
-
-.featurette-lead p {
-  margin-top: 15px;
-}
-
-.featurette-lead ul {
-  margin-top: -5px;
-}
-
-/* Give some space on the sides of the floated elements so text doesn't run right into it. */
-.featurette-image.pull-left {
-  margin-right: 40px;
-}
-
-.featurette-image.pull-right {
-  margin-left: 40px;
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-size: 40px;
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
-}
-
-
-/* Contacts
-------------------------- */
-.contacts {
-  /*background: #3498db;*/
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.contacts input {
-  border-radius: 0;
-}
-
-.contacts .phone,
-.contacts .email {
+/*
+.site-title {
   margin-top: 5px;
-}
-
-
-/* Footer
-------------------------- */
-.footer {
   color: #fff;
-  margin-top: 100px;
-  min-height: 200px;
-  background: #2c3e50;
+  font-weight: 300;
+  font-size: 30px;
+  display: inline-block;
+  margin-top: 34px;
+}
+
+.user {
+  margin-top: 34px;
+}
+.user a{
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 10px 15px;
+  border: 2px solid #fff;
+  display: inline-block;
+  color: #fff;
+
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+.user a:hover {
+  background: #fff;
+  color: rgb(219, 82, 47);
+}
+*/
+.header-description {
+  margin-top: 20px;
+  font-family: Roboto;
+}
+.header-description h1 {
+  font-weight: 100;
+  font-size: 72px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0px 12px rgba(36, 36, 36, 0.55);
+  padding: 0px 0 10px 0;
+  text-align: left;
+}
+
+.header-description h2 {
+  font-weight: 100;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0px 12px rgba(36, 36, 36, 0.55);
+  padding: 0px 0 20px 0;
+  text-align: right;
+}
+
+.header-btn {
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 24px;
+  padding: 20px 35px;
+  border: 2px solid rgb(219, 82, 47);
+  background: rgb(219, 82, 47);
+  display: inline-block;
+
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+.header-btn:hover {
+  color: #fff;
+  background: transparent;
+}
+
+.header-features {
+  margin: -50px 110px 0 110px;
+  color: #fff;
+  display: block;
+}
+.header-feature{
+  padding: 20px 20px 5px 20px;
+}
+
+.subscribe {
+  color: #fff;
+  text-align: right;
+  padding-top:10px;
+}
+.subscribe input{
+  border: 1px solid #fff;
+  height: 42px;
+  width: 322px;
+
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-top-left-radius: 5px;
+  -moz-border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.btn-custom {
+  display: inline-block;
+  padding: 15px 32px 13px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 2px solid #0198e7;
+  background: #0198e7;
+
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-top-right-radius: 5px;
+  -moz-border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.btn-custom:hover {
+  border: 2px solid #0c2c42;
+  background:#0c2c42;
 }
 
 
+/*************************************************************
+                        responsive fix
+**************************************************************/
+/* Large desktop */
+@media (min-width: 1200px) {  }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .header-description h2 {
+    font-size: 83px;
+    line-height: 58px;
+  }
+  .header-features {
+    margin: 0 0 30px 0;
+  }
+  .header-feature {
+    margin: 0 0 30px 0;
+    padding: 0;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  body {
+    padding: 0;
+  }
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .header-description {
+    margin: 76px 0 80px;
+  }
+  .header-description h2 {
+    font-size: 66px;
+    line-height: 58px;
+  }
+  .header-btn {
+    margin-top: 74px;
+  }
+  .header-features {
+    margin: 0 0 30px 0;
+  }
+  .header-feature {
+    margin: 0 0 30px 0;
+    padding: 0;
+  }
+
+  blockquote > div {
+    padding: 0;
+  }
+  blockquote p {
+    font-size: 18px;
+  }
+
+  /* contact form */
+  .contact-form-inner {
+    padding: 18px !important;
+  }
+  .subscribe input {
+    height: 31px;
+    width: 154px;
+  }
+  .btn-custom {
+    padding: 9px 14px 8px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+}
