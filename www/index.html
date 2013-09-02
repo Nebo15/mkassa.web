@@ -77,10 +77,17 @@
           <div class="col-xs-10 col-xs-offset-1 col-sm-12 col-md-10 col-md-offset-1">
             <h2 class="section-header">Запросить больше информации</h2>
             <div class="row">
+<<<<<<< HEAD
               <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+=======
+              <div class="text-center success-msg" style="display:none">
+                <p class="lead">Спасибо. Наш специалист свяжется с вами в ближайшее время.</p>
+              </div>
+              <div class="col-md-8 col-md-offset-2">
+>>>>>>> 47086497399d29b7627b452f4613665fdfda572f
                 <form class="subscription-form">
                   <div class="input-group text-center">
-                    <input type="text" class="form-control input-lg" name="subscriber" placeholder="Ваш email" required />
+                    <input id="inputEmail" type="text" class="form-control input-lg" name="subscriber" placeholder="Ваш email" required />
                     <span class="input-group-btn">
                       <button type="submit" class="btn btn-primary btn-lg">Получить инструкцию</button>
                     </span>
@@ -188,6 +195,30 @@
       $('.carousel').carousel({
         interval: 4000
       });
+
+      $('.subscription-form').submit(function()
+      {
+        event.preventDefault();
+
+        var email = $('#inputEmail').val();
+
+        if(!validateEmail(email))
+        {
+          $('#inputEmail').css('color', '#cc3333');
+        }
+        else
+        {
+          $.post('/form.php', {email: email}).done(function() {
+            $('.subscription-form').slideUp('slow');
+            $('.success-msg').show('slow');
+          });
+        }
+      });
+
+      function validateEmail(email) {
+          var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+          return re.test(email);
+      }
     });
     </script>
 </body>
