@@ -272,6 +272,10 @@ a:hover, a:focus {
 }
 
 @media (max-width: 767px) {
+  body, h1, h2, h3, h4, h5 {
+    font-size: 85%;
+  }
+
   .device-carousel-inner {
     top: 31px;
     bottom: 32px;
