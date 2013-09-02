@@ -273,6 +273,18 @@ a:hover, a:focus {
 
 @media (max-width: 767px) {
 
+  /*.quote-person-box {
+    padding-right: 35px;
+  }
+
+  .quote-box:nth-child(odd) .quote-person-box {
+    text-align: right;
+    padding-right: 0;
+    padding-left: 35px;
+  }*/
+  .quote-person {
+    width: 40px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
