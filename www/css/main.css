@@ -272,6 +272,13 @@ a:hover, a:focus {
 }
 
 @media (max-width: 767px) {
+  .device-carousel-inner {
+    top: 31px;
+    bottom: 32px;
+    right: 28px;
+    left: 29px;
+  }
+
   .quote-person-box {
     padding-right: 10px;
   }
@@ -299,6 +306,10 @@ a:hover, a:focus {
 
   .quote-person {
     width: 40px;
+  }
+
+  .device-carousel-indicators {
+    display: none;
   }
 }
 
