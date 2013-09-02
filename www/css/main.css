@@ -280,6 +280,7 @@ a:hover, a:focus {
   .quote-box:nth-child(odd) .quote-person-box {
     padding-left: 10px;
     right: -10px;
+    color: #000;
   }
 
   .quote-box-inner {
