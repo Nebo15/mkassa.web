@@ -274,10 +274,12 @@ a:hover, a:focus {
 @media (max-width: 767px) {
   .quote-person-box {
     padding-right: 10px;
+    left: -10px;
   }
 
   .quote-box:nth-child(odd) .quote-person-box {
     padding-left: 10px;
+    right: -10px;
   }
 
   .quote-box-inner {
