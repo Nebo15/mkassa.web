@@ -32,7 +32,34 @@
       <div class="container">
         <div class="row">
           <div class="ribbon-pull-up col-md-8 col-md-offset-2">
-            <img src="/img/pages/landing/device.png" class="device" />
+            <div class="carousel slide" id="device-carousel">
+              <div class="carousel-inner device-carousel-inner">
+                <div class="item device-carousel-item active">
+                  <img src="/img/pages/landing/screenshots/0.jpeg" class="device-carousel-screenshot" />
+                </div>
+                <div class="item device-carousel-item">
+                  <img src="/img/pages/landing/screenshots/1.jpeg" class="device-carousel-screenshot" />
+                </div>
+                <div class="item device-carousel-item">
+                  <img src="/img/pages/landing/screenshots/2.jpeg" class="device-carousel-screenshot" />
+                </div>
+                <div class="item device-carousel-item">
+                  <img src="/img/pages/landing/screenshots/3.jpeg" class="device-carousel-screenshot" />
+                </div>
+                <div class="item device-carousel-item">
+                  <img src="/img/pages/landing/screenshots/4.jpeg" class="device-carousel-screenshot" />
+                </div>
+              </div>
+              <img src="/img/pages/landing/device.png" class="device" />
+
+              <ol class="carousel-indicators device-carousel-indicators">
+                <li data-target="#device-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#device-carousel" data-slide-to="1"></li>
+                <li data-target="#device-carousel" data-slide-to="2"></li>
+                <li data-target="#device-carousel" data-slide-to="3"></li>
+                <li data-target="#device-carousel" data-slide-to="4"></li>
+              </ol>
+            </div>
             <a href="#subscription-form" class="scrollTo">
               <img src="/img/pages/landing/icons/playmarket.png" class="device-bage-playMarket" />
             </a>
@@ -70,7 +97,7 @@
                 <div class="col-md-3 features-item">
                   <span class="icon icon-cloud features-icon"></span>
                   <h4>Удобное управление</h4>
-                  Администрирование финансов из кабинера дилера
+                  Администрирование финансов из кабинета дилера
                 </div>
               </div>
             </div>

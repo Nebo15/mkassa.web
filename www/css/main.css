@@ -1,5 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,700&subset=latin,cyrillic);
 
+/* Base elements */
+
 html, body{
   height:100%;
 }
@@ -39,6 +41,7 @@ a:hover, a:focus {
   text-align: center;
 }
 
+/* HEADER */
 .header {
   margin-top: 4%;
   text-align: center;
@@ -59,6 +62,7 @@ a:hover, a:focus {
   line-height: 1.1em;
 }
 
+/* FOOTER */
 .footer {
   height: 70px;
   background: #333;
@@ -77,6 +81,54 @@ a:hover, a:focus {
   margin: 0 5px;
 }
 
+/* DEVICE&CAROUSEL */
+.device {
+  max-width: 100%;
+}
+
+.device-bage-playMarket {
+  position: relative;
+  top: -50px;
+
+  opacity: 0.9;
+  -webkit-transition: opacity 300ms ease;
+  -moz-transition: opacity 300ms ease;
+  -ms-transition: opacity 300ms ease;
+  -o-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+}
+
+.device-bage-playMarket:hover {
+  opacity: 1;
+}
+
+.device-carousel-inner {
+  position: absolute;
+  top: 82px;
+  bottom: 82px;
+  right: 74px;
+  left: 76px;
+  width: auto;
+  background: #FFF;
+}
+
+.device-carousel-item,
+.device-carousel-item .device-carousel-screenshot {
+  width: 600px;
+  height: 375px;
+}
+
+.device-carousel-item {
+  width: 600px;
+  height: 375px;
+}
+
+.device-carousel-indicators {
+  bottom: 80px;
+}
+
+
+/* CONTENT */
 .ribbon {
   margin-top: 260px;
   background: #FEFEFE;
@@ -93,6 +145,18 @@ a:hover, a:focus {
   display: block;
 }
 
+/* CONTENT: Sections */
+.section-header {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.section-header.first {
+  margin-top: 0;
+}
+
+/* CONTENT: Features */
 .features {
   text-align: center;
 }
@@ -110,16 +174,7 @@ a:hover, a:focus {
   font-size: 5em;
 }
 
-.section-header {
-  text-align: center;
-  margin-top: 80px;
-  margin-bottom: 40px;
-}
-
-.section-header.first {
-  margin-top: 0;
-}
-
+/* CONTENT: Testimonials */
 .quote-box {
   margin-bottom: 45px;
   padding: 30px 30px;
@@ -141,8 +196,6 @@ a:hover, a:focus {
   width: 0;
   position: absolute;
   pointer-events: none;
-
-  /*border-color: rgba(65, 129, 1, 1);*/
   border-right-color: #FFF;
   border-width: 20px;
   left: -35px;
@@ -174,26 +227,7 @@ a:hover, a:focus {
   content: '\2014 \00A0';
 }
 
-.device {
-  max-width: 100%;
-}
-
-.device-bage-playMarket {
-  position: relative;
-  top: -50px;
-
-  opacity: 0.9;
-  -webkit-transition: opacity 300ms ease;
-  -moz-transition: opacity 300ms ease;
-  -ms-transition: opacity 300ms ease;
-  -o-transition: opacity 300ms ease;
-  transition: opacity 300ms ease;
-}
-
-.device-bage-playMarket:hover {
-  opacity: 1;
-}
-
+/* CONTENT: Subscription form */
 .subscription-form {
   margin: 0 0 120px 0;
   text-align: left;
