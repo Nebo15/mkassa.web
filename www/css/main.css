@@ -287,13 +287,13 @@ a:hover, a:focus {
 
   .quote-box-inner:before {
     border-width: 7px;
-    left: -16px;
+    left: -14px;
     top: 15px;
     color: #000;
   }
 
   .quote-box:nth-child(odd) .quote-box-inner:before {
-    right: -16px;
+    right: -14px;
     color: #000;
   }
 
