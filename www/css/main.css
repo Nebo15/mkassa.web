@@ -285,6 +285,10 @@ a:hover, a:focus {
     font-size: 16px;
   }
 
+  .subscription-btn-submit {
+    margin-top: 10px;
+  }
+
   /*h1, h2, h3, h4, h5 {
     font-size: 85%;
   }*/
