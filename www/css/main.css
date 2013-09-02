@@ -83,6 +83,7 @@ a:hover, a:focus {
 
 /* DEVICE&CAROUSEL */
 .device {
+  width: 750px;
   max-width: 100%;
 }
 
@@ -115,7 +116,7 @@ a:hover, a:focus {
 .device-carousel-item,
 .device-carousel-item .device-carousel-screenshot {
   width: 600px;
-  height: 375px;
+  max-width: 100%;
 }
 
 .device-carousel-item {
@@ -127,6 +128,10 @@ a:hover, a:focus {
   bottom: 80px;
 }
 
+.device-carousel-control {
+  position: absolute;
+  left: 1px;
+}
 
 /* CONTENT */
 .ribbon {
@@ -169,6 +174,10 @@ a:hover, a:focus {
   margin-top: 0;
 }
 
+.features-item {
+  margin-bottom: 40px;
+}
+
 .features-icon {
   display: block;
   font-size: 5em;
@@ -181,7 +190,7 @@ a:hover, a:focus {
   border-radius: 8px;
   text-align: left;
   box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
-  width: calc(100% - 148px);
+  width: calc(100% - 150px);
   margin-left: 20px;
   margin-right: 0;
   display: inline-block;
@@ -244,4 +253,38 @@ a:hover, a:focus {
 .subscription-form {
   margin: 0 0 120px 0;
   text-align: left;
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .device-carousel-inner {
+    top: 65px;
+    bottom: 66px;
+    right: 59px;
+    left: 61px;
+  }
+
+  .device-carousel-indicators {
+    bottom: 60px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .device-carousel-inner {
+    top: 67px;
+    bottom: 68px;
+    right: 61px;
+    left: 63px;
+  }
+
+  .device-carousel-indicators {
+    bottom: 65px;
+  }
+}
+
+@media (min-width: 1200px) {
+
 }
