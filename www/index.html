@@ -82,10 +82,17 @@
               </div>
               <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
                 <form class="subscription-form">
-                  <div class="input-group text-center">
+                  <div class="input-group text-center hidden-xs">
                     <input id="inputEmail" type="text" class="form-control input-lg subscription-input-email" name="subscriber" placeholder="Ваш email" required />
                     <span class="input-group-btn">
                       <button type="submit" class="btn btn-primary btn-lg subscription-btn-submit">Получить инструкцию</button>
+                    </span>
+                  </div>
+
+                  <div class="input-group text-center visible-xs">
+                    <input id="inputEmail" type="text" class="form-control subscription-input-email" name="subscriber" placeholder="Ваш email" required />
+                    <span class="input-group-btn">
+                      <button type="submit" class="btn btn-primary subscription-btn-submit">Получить инструкцию</button>
                     </span>
                   </div>
                 </form>

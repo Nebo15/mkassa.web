@@ -273,7 +273,7 @@ a:hover, a:focus {
 
 @media (max-width: 767px) {
   body {
-    font-size: 90%;
+    font-size: 95%;
   }
 
   .section-header {
@@ -283,11 +283,6 @@ a:hover, a:focus {
   h4,
   .h4 {
     font-size: 16px;
-  }
-
-  .subscription-btn-submit,
-  .subscription-input-email {
-    font-size: 85%;
   }
 
   /*h1, h2, h3, h4, h5 {
