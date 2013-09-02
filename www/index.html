@@ -1,80 +1,157 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-    <meta charset="utf-8">
+<html lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Мобильная касса</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Beaker - Responsive Landing Page">
-    <meta name="author" content="Shy Markets">
-
-    <!-- Le styles -->
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script type="text/javascript" src="//cdn.jsdelivr.net/html5shiv/3.6.1/html5shiv.min.js"></script>
-    <![endif]-->
-
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css" rel="stylesheet">
-
+    <meta name="description" content="Терминал по приёму платежей в вашем Android устройстве">
+    <meta name="author" content="Credit Pilot">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="/css/main.css" rel="stylesheet">
 
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
   </head>
 
-  <body style="overflow: auto;">
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+          <h1 class="header-text">Мобильная касса</h1>
+          <h2 class="header-lead">Приложение, которое превратит любое Android устройство в терминал</h2>
+        </div>
+      </div>
+    </header>
 
-      <div class="container-fluid">
-        <div class="row-fluid">
-          <div class="span8 offset2">
-            <div class="header-description">
-              <h1>Мобильная касса</h1>
-              <h2>Это всё, что вам нужно, чтобы принимать платежи в любой точке</h2>
-            </div>
-            <div class="header-feature">
-              <div class="row-fluid">
-                <div class="span9">
-                  <p>В мире есть много мест, где людям необходимо оплатить услуги, но у них нет доступа к терминалу. Мобильная касса создана для того, чтобы закрыть эту нишу и сделать терминал, который доступен повсеместно. При этом, терминалом может стать любой телефон или планшетный компьютер, что значительно удешевляет старт для бизнеса.</p>
-                  <p>Мобильная касса - это приложение, которое позволяет осуществлять платежи через мобильное устройство.</p>
-                  <p>Мобильная касса имеет ряд уникальных преимуществ:</p>
-                  <ul>
-                    <li>низкая стоимость оборудования;</li>
-                    <li>возможность работать в любой точке, где есть 2G/3G/Wi-Fi;</li>
-                    <li>использование персонализации и голосового набора для ускорения оплаты.</li>
-                  </ul>
-                  <p>Типичные прецеденты:</p>
-                  <ul>
-                    <li>пополнение баланса мобильного телефона через гида заграницей</li>
-                    <li>оплата кредита через проводника в поезде</li>
-                    <li>оплата домашнего интернета из кафе</li>
-                    <li>оплата интернет-сервиса через уличную точку в месте с большой проходимостью</li>
-                  </ul>
+    <div class="ribbon">
+      <div class="container">
+        <div class="row">
+          <div class="ribbon-pull-up col-md-8 col-md-offset-2">
+            <img src="/img/pages/landing/device.png" class="device" />
+            <a href="#subscription-form" class="scrollTo">
+              <img src="/img/pages/landing/icons/playmarket.png" class="device-bage-playMarket" />
+            </a>
+          </div>
+        </div>
 
-                  <section id="subscribe" class="subscribe">
-                    <form id="subsc-form" class="pull-left">
-                      <div class="input-append">
-                          <input type="text" name="subscriber" placeholder="Оставьте свой email или номер телефона" required>
-                          <button type="submit" class="btn-custom">Узнать подробности</button>
-                        </div>
-                    </form>
-                  </section>
+        <!--<div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <h2 class="section-header first">О продукте</h2>
+            <p>В жизни есть много моментов, когда человеку необходимо оплтатить ту или иную услугу. И негде. Ни терминалов, ни банков. Даже Почты России нет.</p>
+            <p>Установите приложение на Android устройство, и начните свой бизнес в течение 5 минут.</p>
+          </div>
+        </div>-->
+
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <h2 class="section-header first">Ключевые преимущества</h2>
+            <div class="features">
+              <div class="row features-row">
+                <div class="col-md-3 features-item">
+                  <span class="icon icon-mobile-phone features-icon"></span>
+                  <h4>Мобильность</h4>
+                  Приём платежей в любой точке на любом Android планшете
                 </div>
-                <div class="span3 hidden-phone">
-                  <div style="position:absolute">
-                    <img id="screen" src="/img/breezi2.png" alt=""/>
-                  </div>
+                <div class="col-md-3 features-item">
+                  <span class="icon icon-dollar features-icon"></span>
+                  <h4>Выгодно</h4>
+                  От 100$ за комплект оборудования, ПО и обслуживание - бесплатно
+                </div>
+                <div class="col-md-3 features-item">
+                  <span class="icon icon-key features-icon"></span>
+                  <h4>Лёгкий старт</h4>
+                  Низкий порог входа на рынок и масштабируемость бизнесса
+                </div>
+                <div class="col-md-3 features-item">
+                  <span class="icon icon-cloud features-icon"></span>
+                  <h4>Удобное управление</h4>
+                  Администрирование финансов из кабинера дилера
                 </div>
               </div>
-
-
             </div>
           </div>
         </div>
+
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <h2 class="section-header">Будьте рядом со своими клиентами</h2>
+            <img src="/img/pages/landing/users/valery.png" class="quote-person first img-circle" />
+            <div class="quote-box first">
+              <blockquote class="quote">
+                <p>Я приехал в Анталию, и понял, что денег на телефоне нет.</p>
+                <p>Эту проблему мне помог решить гид, пополнив мне счёт не покидая лобби отеля.</p>
+                <small><cite title="Валерий">Валерий</cite></small>
+              </blockquote>
+            </div>
+
+            <img src="/img/pages/landing/users/murad.png" class="quote-person img-circle" />
+            <div class="quote-box">
+              <span class="quote">
+                <p>Сидя в кафе я получил привычное сообщение о том, что я снова забыл оплатить интернет.</p>
+                <p>Оторваться от важной встречи я не смог, да и не хотелось идти к терминалу, потому мне помог официант, пополнив баланс на месте.</p>
+              </span>
+            </div>
+
+            <img src="/img/pages/landing/users/lee.png" class="quote-person img-circle" />
+            <div class="quote-box">
+              <span class="quote">
+                <p>Важные вещи приходят в голову в самый неожиданный момент, как тот случай, когда я уже в поезде вспомнил о неоплаченном кредите и шрафных санкциях за него.</p>
+                <p>И эту проблему мне помог решить проводник, он принял наличные и провёл платёж, я погасил задолженность и спокойно продолжил свой путь.</p>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <h2 class="section-header">Подписка на beta версию</h2>
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <form class="subscription-form" id="subscription-form">
+                  <div class="input-group text-center">
+                    <input type="text" class="form-control input-lg" name="subscriber" placeholder="Ваш email" required />
+                    <span class="input-group-btn">
+                      <button type="submit" class="btn btn-primary btn-lg">Получить инструкцию</button>
+                    </span>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
+    </div>
 
+    <div class="footer-wrap">
+      <footer class="footer">
+        <div class="copyright pull-right">
+          Разработка компании
+          <a href="http://www.creditpilot.ru/pages/agentam">
+            <img src="/img/pages/landing/icons/creditpilot_logo.png" class="copyright-logo" />
+          </a>
+        </div>
+        <div class="copyright pull-left">
+          &copy; Мобильная касса, с 1999 года
+        </div>
+      </footer>
+    </div>
 
-    <!-- Le javascript
-    ================================================== -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1.9.1/jquery-1.9.1.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
-
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="/vendor/jquery.scrollTo/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+      $('.scrollTo').click(function() {
+        $.scrollTo($(this).attr('href'), 1000);
+        return false;
+      });
+    });
+    </script>
 </body>
 </html>

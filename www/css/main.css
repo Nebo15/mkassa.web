@@ -1,35 +1,24 @@
-/*
- * Beaker - Responsive Landing Page - V.1.0
- * Author: Shy Markets
- * Author URL: http://creativemarket.com/shymarkets
- * All Right Reserved
- * Credits:
- * * http://twitter.github.com/bootstrap/
- * * http://fortawesome.github.com/Font-Awesome/
- **/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,700&subset=latin,cyrillic);
 
-/*************************************************************
-                         google font
-**************************************************************/
-@import url(http://fonts.googleapis.com/css?family=Roboto:300,Ubuntu:300&subset=latin,cyrillic);
-
-/*************************************************************
-                    reset some defaults styles
-**************************************************************/
 html, body{
   height:100%;
 }
 
 body {
-  font-family: Ubuntu;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 300;
-  color: rgb(124, 124, 124);
-  background-image: url(../img/bg.jpg);
-  /*background-repeat:;*/
+  background-image: url(../img/pages/landing/marquee.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 -200px;
   -webkit-background-size:cover;
   -moz-background-size:cover;
   background-size:cover;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
 }
 
 a {
@@ -46,228 +35,166 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
-p {
-  color: #000;
-  font-size:14px;
+.text-center {
+  text-align: center;
 }
 
-li {
-  font-size:13px;
-}
-/*
-.site-title {
-  margin-top: 5px;
-  color: #fff;
-  font-weight: 300;
-  font-size: 30px;
-  display: inline-block;
-  margin-top: 34px;
+.header {
+  margin-top: 4%;
+  text-align: center;
+  color: #FFF;
+  text-rendering: optimizelegibility;
+  margin-bottom: 100px;
 }
 
-.user {
-  margin-top: 34px;
-}
-.user a{
-  margin-top: 10px;
-  font-size: 14px;
-  padding: 10px 15px;
-  border: 2px solid #fff;
-  display: inline-block;
-  color: #fff;
-
-  -webkit-border-radius: 9px;
-  -moz-border-radius: 9px;
-  border-radius: 9px;
-}
-.user a:hover {
-  background: #fff;
-  color: rgb(219, 82, 47);
-}
-*/
-.header-description {
-  margin-top: 20px;
-  font-family: Roboto;
-}
-.header-description h1 {
-  font-weight: 100;
-  font-size: 72px;
-  color: rgb(255, 255, 255);
-  text-shadow: 0 0px 12px rgba(36, 36, 36, 0.55);
-  padding: 0px 0 10px 0;
-  text-align: left;
-}
-.header-feature {
-  background-color: #e5e5e5;color: #000;
+.header-text {
+  font-size: 50px;
 }
 
-.header-description h2 {
-  font-weight: 100;
-  font-size: 24px;
-  color: rgb(255, 255, 255);
-  text-shadow: 0 0px 12px rgba(36, 36, 36, 0.55);
-  padding: 0px 0 20px 0;
-  text-align: right;
+.header-text,
+.header-lead {
+  font-weight: 200;
+  line-height: 1em;
+  text-shadow: 0 1px 1px rgba(0,0,0,.4);
+  line-height: 1.1em;
 }
 
-.header-btn {
-  color: #fff;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  font-weight: 300;
-  font-size: 24px;
-  padding: 20px 35px;
-  border: 2px solid rgb(219, 82, 47);
-  background: rgb(219, 82, 47);
-  display: inline-block;
-
-  -webkit-border-radius: 9px;
-  -moz-border-radius: 9px;
-  border-radius: 9px;
-}
-.header-btn:hover {
-  color: #fff;
-  background: transparent;
+.footer {
+  height: 70px;
+  background: #333;
+  font-size: 13px;
 }
 
-.header-features {
-  margin: -50px 110px 0 110px;
-  color: #fff;
+.copyright {
+  padding: 28px 40px 0 40px;
+  color: #E3E3E3;
+}
+
+.copyright-logo {
+  max-width: 100%;
+  width: 62.5px;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+
+.ribbon {
+  margin-top: 260px;
+  background: #FEFEFE;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.7);
+  background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
+  border: 2px solid #FAFAFA;
+  box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+}
+
+.ribbon-pull-up {
+  margin-top: -230px;
+  text-align: center;
+  max-width: 100%;
   display: block;
 }
-.header-feature{
-  padding: 20px 20px 5px 20px;
-}
 
-.subscribe {
-  color: #fff;
-  text-align: right;
-  padding-top:10px;
-}
-.subscribe input{
-  border: 1px solid #fff;
-  height: 42px;
-  width: 322px;
-
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-
-  -webkit-border-top-left-radius: 5px;
-  -webkit-border-bottom-left-radius: 5px;
-  -moz-border-top-left-radius: 5px;
-  -moz-border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
-.btn-custom {
-  display: inline-block;
-  padding: 15px 32px 13px;
-  margin-bottom: 0;
-  font-size: 14px;
-  line-height: 20px;
-  color: #fff;
+.features {
   text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  border: 2px solid #0198e7;
-  background: #0198e7;
-
-  -webkit-border-top-right-radius: 5px;
-  -webkit-border-bottom-right-radius: 5px;
-  -moz-border-top-right-radius: 5px;
-  -moz-border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-
-  -webkit-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  -ms-transition: all 300ms ease;
-  -o-transition: all 300ms ease;
-  transition: all 300ms ease;
-}
-.btn-custom:hover {
-  border: 2px solid #0c2c42;
-  background:#0c2c42;
 }
 
-#screen {
-  width:396px;
-  height:400px;
-  position:absolute;
-  top:-40px;
-  left:-70px;
+.features-row {
+  margin-top: 40px;
 }
 
-/*************************************************************
-                        responsive fix
-**************************************************************/
-/* Large desktop */
-@media (min-width: 1200px) {  }
-
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
-  /*.header-description h2 {
-    font-size: 20px;
-    line-height: 58px;
-  }
-  .header-features {
-    margin: 0 0 30px 0;
-  }
-  .header-feature {
-    margin: 0 0 30px 0;
-    padding: 0;
-  }*/
+.features-row:first-child {
+  margin-top: 0;
 }
 
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
-  body {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .container {
-    padding: 0px;
-  }
-  .header-description {
-    margin: 10px;
-  }
-  .header-description h1 {
-    font-size:48px;
-  }
-  .header-description h2 {
-    font-size: 14px;
-    line-height: 14px;
-  }
-  .header-btn {
-    margin-top: 74px;
-  }
-  .header-features {
-    margin: 0 0 30px 0;
-  }
-  .header-feature {
-    padding: 10px 10px 5px 10px;
-  }
-
-  blockquote > div {
-    padding: 0;
-  }
-  blockquote p {
-    font-size: 18px;
-  }
-
-  .contact-form-inner {
-    padding: 18px;
-  }
-  .subscribe input {
-    height: 31px;
-    width: 154px;
-  }
-  .btn-custom {
-    padding: 9px 14px 8px;
-  }
-
+.features-icon {
+  display: block;
+  font-size: 5em;
 }
 
-@media (max-width: 480px) { }
+.section-header {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.section-header.first {
+  margin-top: 0;
+}
+
+.quote-box {
+  margin-bottom: 45px;
+  padding: 30px 30px;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+  width: calc(100% - 145px);
+  margin-left: 20px;
+  display: inline-block;
+  position: relative;
+  background: #FFF;
+}
+
+.quote-box:before {
+  top: 30px;
+  border: transparent solid;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+
+  /*border-color: rgba(65, 129, 1, 1);*/
+  border-right-color: #FFF;
+  border-width: 20px;
+  left: -35px;
+}
+
+.quote-person {
+  margin-bottom: 35px;
+  vertical-align: top;
+  width: 120px;
+  display: inline-block;
+}
+
+.quote {
+  color: #2d303b;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.quote-cite {
+  display: block;
+  line-height: 1.428571429;
+  color: #999999;
+  font-size: 85%;
+  font-style: normal;
+}
+
+.quote-cite:before {
+  content: '\2014 \00A0';
+}
+
+.device {
+  max-width: 100%;
+}
+
+.device-bage-playMarket {
+  position: relative;
+  top: -50px;
+
+  opacity: 0.9;
+  -webkit-transition: opacity 300ms ease;
+  -moz-transition: opacity 300ms ease;
+  -ms-transition: opacity 300ms ease;
+  -o-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+}
+
+.device-bage-playMarket:hover {
+  opacity: 1;
+}
+
+.subscription-form {
+  margin: 0 0 120px 0;
+  text-align: left;
+}
