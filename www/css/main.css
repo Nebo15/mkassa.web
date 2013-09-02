@@ -385,7 +385,7 @@ a:hover, a:focus {
 @media (min-width: 1200px) {
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 2000px) {
   .header {
     background-image: url(../img/pages/landing/marquee.jpg);
   }
