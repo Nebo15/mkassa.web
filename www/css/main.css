@@ -288,6 +288,7 @@ a:hover, a:focus {
   .quote-box-inner:before {
     border-width: 10px;
     left: -20px;
+    top: 15px;
     color: #000;
   }
 
