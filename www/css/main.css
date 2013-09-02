@@ -276,6 +276,20 @@ a:hover, a:focus {
     font-size: 85%;
   }
 
+  .section-header {
+    font-size: 20px;
+  }
+
+  h4,
+  .h4 {
+    font-size: 16px;
+  }
+
+  .subscription-btn-submit,
+  .subscription-input-email {
+    font-size: 85%;
+  }
+
   /*h1, h2, h3, h4, h5 {
     font-size: 85%;
   }*/
