@@ -184,16 +184,18 @@ a:hover, a:focus {
 }
 
 /* CONTENT: Testimonials */
-.quote-box-inner {
+.quote-box {
   margin-bottom: 45px;
+  display: table;
+}
+
+.quote-box-inner {
   padding: 30px 30px;
   border-radius: 8px;
   text-align: left;
   box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
-  width: calc(100% - 150px);
-  margin-left: 20px;
-  margin-right: 0;
-  display: inline-block;
+  width: 100%;
+  height: auto;
   position: relative;
   background: #FFF;
 }
@@ -201,6 +203,16 @@ a:hover, a:focus {
 .quote-box:nth-child(odd) .quote-box-inner {
   margin-right: 20px;
   margin-left: 0;
+}
+
+.quote-person-box {
+  padding-right: 35px;
+}
+
+.quote-box:nth-child(odd) .quote-person-box {
+  text-align: right;
+  padding-right: 0;
+  padding-left: 35px;
 }
 
 .quote-box-inner:before {
@@ -224,10 +236,7 @@ a:hover, a:focus {
 }
 
 .quote-person {
-  margin-bottom: 35px;
-  vertical-align: top;
   width: 120px;
-  display: inline-block;
 }
 
 .quote {
@@ -247,6 +256,11 @@ a:hover, a:focus {
 
 .quote-cite:before {
   content: '\2014 \00A0';
+}
+
+.quote-box-inner,
+.quote-person-box {
+  display: table-cell;
 }
 
 /* CONTENT: Subscription form */
