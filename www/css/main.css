@@ -44,7 +44,7 @@ a:hover, a:focus {
   text-rendering: optimizelegibility;
   padding-bottom: 250px;
 
-  background-image: url(../img/pages/landing/marquee.jpg);
+  background-image: url(../img/pages/landing/marquee-md.jpg);
   background-repeat: no-repeat;
   background-position: 0 -200px;
   -webkit-background-size:cover;
@@ -301,9 +301,9 @@ a:hover, a:focus {
     height: 215px;
   }
 
-  /*h1, h2, h3, h4, h5 {
-    font-size: 85%;
-  }*/
+  .header {
+    background-image: url(../img/pages/landing/marquee-xs.jpg);
+  }
 
   .device-carousel-inner {
     top: 31px;
@@ -362,6 +362,10 @@ a:hover, a:focus {
   .device-carousel-indicators {
     bottom: 60px;
   }
+
+  .header {
+    background-image: url(../img/pages/landing/marquee-sm.jpg);
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -375,8 +379,14 @@ a:hover, a:focus {
   .device-carousel-indicators {
     bottom: 65px;
   }
+
 }
 
 @media (min-width: 1200px) {
+}
 
+@media (min-width: 1800px) {
+  .header {
+    background-image: url(../img/pages/landing/marquee.jpg);
+  }
 }
