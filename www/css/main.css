@@ -289,7 +289,7 @@ a:hover, a:focus {
     margin-top: 10px;
   }
 
-  .subscription-form {
+  #subscription-form {
     height: 165px;
   }
 
