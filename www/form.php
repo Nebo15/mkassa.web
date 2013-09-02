@@ -11,7 +11,7 @@ if(!isset($req['email']))
 	die('{}');
 $req['email'] = filter_var($req['email'], FILTER_SANITIZE_EMAIL);
 
-$subject = "=?utf-8?B?".base64_encode('Schet.ru: Запрос от '.$req['email'])."?=";
+$subject = "=?utf-8?B?".base64_encode('Мобильная касса: Запрос от '.$req['email'])."?=";
 $message = $req['email'];
 $additional_headers  = 'Content-Transfer-Encoding: 8bit' .  "\r\n";
 $additional_headers .= 'Content-Type: text/plain; charset=utf-8' . "\r\n";
