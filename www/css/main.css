@@ -341,10 +341,6 @@ a:hover, a:focus {
     margin-top: 10px;
   }
 
-  .subscription-form-row {
-    height: 215px;
-  }
-
   .header {
     background-image: url(../img/pages/landing/marquee-xs.jpg);
   }
