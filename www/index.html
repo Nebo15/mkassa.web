@@ -88,10 +88,10 @@
 
                 <form class="subscription-form visible-xs text-center" action="/form.php" method="POST">
                   <input id="inputEmail" type="text" class="form-control subscription-input-email" name="subscriber-mobile" placeholder="Ваш email" required />
-                  <a href="#" class="btn btn-primary btn-block subscription-btn-submit has-spinner">
+                  <button type="submit" class="btn btn-primary btn-block subscription-btn-submit has-spinner">
                     <span class="spinner icon icon-spin icon-refresh"></span>
                     Получить инструкцию
-                  </a>
+                  </button>
                 </form>
               </div>
             </div>
@@ -217,7 +217,7 @@
         interval: 4000
       });
 
-      $('.subscription-btn-submit').click(function() {
+      $('.subscription-form').submit(function() {
         event.preventDefault();
 
         var email = $('#inputEmail').val();
