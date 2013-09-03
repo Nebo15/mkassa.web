@@ -337,6 +337,10 @@ a:hover, a:focus {
     font-size: 16px;
   }
 
+  .subscription-form .col-xs-10 {
+    padding: 0 10px;
+  }
+
   .subscription-btn-submit {
     margin-top: 10px;
   }
