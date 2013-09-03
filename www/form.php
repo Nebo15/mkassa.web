@@ -20,7 +20,7 @@ mail ($recipients, $subject, $message, $additional_headers);
 if (!$handle = fopen($log_file, 'a+'))
 	die("Cannot open file ($log_file)");
 
-$log_string = date("Y-m-d H:i:s").';'.$req['name'].';'.$req['company_name'].';'.$req['contact'].PHP_EOL;
+$log_string = date("Y-m-d H:i:s").';'.$req['email'].PHP_EOL;
 if (fwrite($handle, $log_string) === FALSE)
     die("Cannot write to file ($log_file)");
 
