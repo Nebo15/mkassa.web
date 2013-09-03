@@ -73,16 +73,16 @@
           <div class="col-xs-12 col-md-10 col-md-offset-1">
             <h2 class="section-header">Запросить больше информации</h2>
             <div class="row">
-              <div class="text-center success-msg" style="display:none">
-                <p class="lead">Спасибо. Наш специалист свяжется с вами в ближайшее время.</p>
-              </div>
               <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
                 <form class="subscription-form">
                   <div class="hidden-xs">
                     <div class="input-group text-center">
                       <input id="inputEmail" type="email" class="form-control input-lg subscription-input-email" name="subscriber" placeholder="Ваш email" required />
                       <span class="input-group-btn">
-                        <button type="submit" class="btn btn-primary btn-lg subscription-btn-submit">Получить инструкцию</button>
+                        <button type="submit" class="btn btn-primary btn-lg subscription-btn-submit has-spinner">
+                          <span class="spinner icon icon-spin icon-refresh"></span>
+                          Получить инструкцию
+                        </button>
                       </span>
                     </div>
                   </div>
@@ -92,6 +92,13 @@
                     <button type="submit" class="btn btn-primary btn-block subscription-btn-submit">Получить инструкцию</button>
                   </div>
                 </form>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-lg-10 col-lg-offset-1">
+                <div class="text-center success-msg" style="display:none">
+                  <p class="lead">Спасибо. Наш специалист свяжется с вами в ближайшее время.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -215,23 +222,13 @@
 
         var email = $('#inputEmail').val();
 
-        if(!validateEmail(email))
-        {
-          $('#inputEmail').css('color', '#cc3333');
-        }
-        else
-        {
-          $.post('/form.php', {email: email}).done(function() {
-            $('.subscription-form').slideUp('slow');
-            $('.success-msg').show('slow');
-          });
-        }
+        $('.subscription-btn-submit').addClass('show-spinner');
+        $('.subscription-form input, .subscription-form button, .subscription-form .btn').attr('disabled', 'true');
+        $.post('/form.php', {email: email}).done(function() {
+          $('.subscription-btn-submit').removeClass('show-spinner');
+          $('.success-msg').show('slow');
+        });
       });
-
-      function validateEmail(email) {
-          var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-          return re.test(email);
-      }
     });
     </script>
 

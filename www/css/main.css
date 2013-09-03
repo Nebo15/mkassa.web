@@ -267,8 +267,53 @@ a:hover, a:focus {
 
 /* CONTENT: Subscription form */
 .subscription-form {
-  margin: 0 0 120px 0;
+  margin: 0 0 20px 0;
   text-align: left;
+}
+
+#subscription-form {
+  margin-bottom: 40px;
+}
+
+/* Loader spinner for any purposes */
+.has-spinner .spinner {
+  display: inline-block;
+  opacity: 0;
+  max-width: 0;
+
+  -webkit-transition: opacity 0.45s, max-width 0.75s;
+  -moz-transition: opacity 0.45s, max-width 0.75s;
+  -o-transition: opacity 0.45s, max-width 0.75s;
+  transition: opacity 0.45s, max-width 0.75s; /* Duration fixed since we animate additional hidden width */
+}
+
+.has-spinner.show-spinner {
+  cursor:progress;
+}
+
+.has-spinner.show-spinner .spinner {
+  opacity: 1;
+  max-width: 50px; /* More than it will ever come, notice that this affects on animation duration */
+}
+
+.has-spinner [class*="icon"]:not(.spinner) {
+  -webkit-transition: opacity 0.2s, max-width 0.2s;
+  -moz-transition: opacity 0.2s, max-width 0.2s;
+  -ms-transition: opacity 0.2s, max-width 0.2s;
+  -o-transition: opacity 0.2s, max-width 0.2s;
+  transform: opacity 0.2s, max-width 0.2s;
+}
+
+.has-spinner.show-spinner [class*="icon"]:not(.spinner) {
+  opacity: 0;
+  max-width: 0;
+}
+
+.has-spinner:not(.show-spinner) .icon-spin {
+  -moz-animation: none;
+  -o-animation: none;
+  -webkit-animation: none;
+  animation: none;
 }
 
 @media (max-width: 767px) {
