@@ -399,8 +399,8 @@ a:hover, a:focus {
   .device-carousel-inner {
     top: 65px;
     bottom: 65px;
-    right: 58px;
-    left: 60px;
+    right: 59px;
+    left: 61px;
   }
 
   .device-carousel-indicators {
@@ -415,9 +415,9 @@ a:hover, a:focus {
 @media (min-width: 992px) and (max-width: 1199px) {
   .device-carousel-inner {
     top: 67px;
-    bottom: 68px;
+    bottom: 67px;
     right: 61px;
-    left: 63px;
+    left: 62px;
   }
 
   .device-carousel-indicators {
