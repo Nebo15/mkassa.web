@@ -398,7 +398,7 @@ a:hover, a:focus {
 @media (min-width: 768px) and (max-width: 991px) {
   .device-carousel-inner {
     top: 65px;
-    bottom: 66px;
+    bottom: 65px;
     right: 59px;
     left: 61px;
   }
