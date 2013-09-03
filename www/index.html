@@ -232,6 +232,7 @@
         if(!validateEmail(email)) {
           $input.css('color', '#cc3333');
           $group.addClass('has-error');
+          $input.focus();
         } else {
           $btn.addClass('show-spinner');
           $btn.add($input).attr('disabled', 'true');
