@@ -218,14 +218,17 @@
       });
 
       $('.subscription-form').submit(function() {
-        alert('sbm');
+        console.log('sbm form');
         event.preventDefault();
+        console.log('prev');
 
         var email = $('#inputEmail').val();
 
         if(!validateEmail(email)) {
+          console.log('email invalid');
           $('#inputEmail').css('color', '#cc3333');
         } else {
+          console.log('email valid');
           $('.subscription-btn-submit').addClass('show-spinner');
           $('.subscription-form input, .subscription-form button, .subscription-form .btn').attr('disabled', 'true');
           $.post('/form.php', {email: email}).done(function() {
