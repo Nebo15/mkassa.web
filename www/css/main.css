@@ -271,7 +271,7 @@ a:hover, a:focus {
   text-align: left;
 }
 
-#subscription-form {
+.subscription-form-row {
   margin-bottom: 40px;
 }
 
@@ -342,7 +342,7 @@ a:hover, a:focus {
     margin-top: 10px;
   }
 
-  #subscription-form {
+  .subscription-form-row {
     height: 215px;
   }
 
