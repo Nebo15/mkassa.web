@@ -229,10 +229,12 @@
         if(!validateEmail(email)) {
           console.log('email invalid');
           $('#inputEmail').css('color', '#cc3333');
+          $(this).find('.form-group').addClass('has-error');
         } else {
           console.log('email valid');
           $('.subscription-btn-submit').addClass('show-spinner');
           $('.subscription-form input, .subscription-form button, .subscription-form .btn').attr('disabled', 'true');
+          $(this).find('.form-group').removeClass('has-error');
           $.post('/form.php', {email: email}).done(function() {
             $('.subscription-btn-submit').removeClass('show-spinner');
             $('.success-msg').show('slow');
