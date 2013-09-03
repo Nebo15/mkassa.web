@@ -227,11 +227,11 @@
         var email = $('#inputEmail').val();
 
         if(!validateEmail(email)) {
-          console.log('email invalid');
+          console.log('email invalid', email);
           $('#inputEmail').css('color', '#cc3333');
           $(this).find('.form-group').addClass('has-error');
         } else {
-          console.log('email valid');
+          console.log('email valid', email);
           $('.subscription-btn-submit').addClass('show-spinner');
           $('.subscription-form input, .subscription-form button, .subscription-form .btn').attr('disabled', 'true');
           $(this).find('.form-group').removeClass('has-error');
