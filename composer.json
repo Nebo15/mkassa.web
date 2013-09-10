@@ -1,0 +1,11 @@
+{
+    "config": {
+        "zeus": {
+            "stage_url": "http:\/\/zeus.nebo15.me",
+            "prod_url": "http:\/\/zeus.schet.ru"
+        }
+    },
+    "require": {
+        "mailchimp/mailchimp": "*"
+    }
+}
