@@ -38,28 +38,3 @@ if(isset($_REQUEST) && is_array($_REQUEST) && array_key_exists('json', $_REQUEST
   </html>
 HTML;
 }
-
-// $recipients = 'korchasa@gmail.com, felix.polianski@gmail.com';
-// $log_file = __DIR__.'/../var/senders.log';
-
-// $req = $_POST;
-
-// if(!isset($req['email']))
-//  die('{}');
-
-
-// $subject = "=?utf-8?B?".base64_encode('Schet.ru b2c: Запрос от '.$req['email'])."?=";
-// $message = $req['email'];
-// $additional_headers  = 'Content-Transfer-Encoding: 8bit' .  "\r\n";
-// $additional_headers .= 'Content-Type: text/plain; charset=utf-8' . "\r\n";
-// mail ($recipients, $subject, $message, $additional_headers);
-
-// if (!$handle = fopen($log_file, 'a+'))
-//  die("Cannot open file ($log_file)");
-
-// $log_string = date("Y-m-d H:i:s").';'.$req['email'].PHP_EOL;
-// if (fwrite($handle, $log_string) === FALSE)
-//     die("Cannot write to file ($log_file)");
-
-// fclose($handle);
-
