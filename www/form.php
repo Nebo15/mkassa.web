@@ -17,7 +17,23 @@ $params = array(
 if($_REQUEST['type'] == 'json') {
   echo json_encode($mc->call('lists/subscribe', $params));
 } else {
-  header('Location: /#done');
+  echo <<<HTML
+  <!DOCTYPE HTML>
+  <html lang="en-US">
+      <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="refresh" content="1;url=/">
+          <script type="text/javascript">
+              window.location.href = "/"
+          </script>
+          <title>Перенаправление</title>
+      </head>
+      <body>
+        Ваши данные отправленны, если в течении 5 секунд вы не будете перенаправлены обратно на сайт,
+        то нажмите на <a href="/">ссылку</a>.
+      </body>
+  </html>
+HTML;
 }
 
 // $recipients = 'korchasa@gmail.com, felix.polianski@gmail.com';
