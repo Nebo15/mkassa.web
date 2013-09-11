@@ -237,7 +237,7 @@
           $btn.addClass('show-spinner');
           $btn.add($input).attr('disabled', 'true');
           $group.removeClass('has-error');
-          $.post('/form.php', {email: email}).done(function() {
+          $.post('/form.php', {email: email, type:'json'}).done(function() {
             $btn.removeClass('show-spinner');
             $('.success-msg').show('slow');
             $input.css('color', '#000');

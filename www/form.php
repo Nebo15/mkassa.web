@@ -14,8 +14,11 @@ $params = array(
     'double_optin' => false
 );
 
-echo json_encode($mc->call('lists/subscribe', $params));
-
+if($_REQUEST['type'] == 'json') {
+  echo json_encode($mc->call('lists/subscribe', $params));
+} else {
+  header('Location: /#done');
+}
 
 // $recipients = 'korchasa@gmail.com, felix.polianski@gmail.com';
 // $log_file = __DIR__.'/../var/senders.log';
@@ -23,7 +26,7 @@ echo json_encode($mc->call('lists/subscribe', $params));
 // $req = $_POST;
 
 // if(!isset($req['email']))
-// 	die('{}');
+//  die('{}');
 
 
 // $subject = "=?utf-8?B?".base64_encode('Schet.ru b2c: Запрос от '.$req['email'])."?=";
@@ -33,7 +36,7 @@ echo json_encode($mc->call('lists/subscribe', $params));
 // mail ($recipients, $subject, $message, $additional_headers);
 
 // if (!$handle = fopen($log_file, 'a+'))
-// 	die("Cannot open file ($log_file)");
+//  die("Cannot open file ($log_file)");
 
 // $log_string = date("Y-m-d H:i:s").';'.$req['email'].PHP_EOL;
 // if (fwrite($handle, $log_string) === FALSE)
@@ -41,4 +44,3 @@ echo json_encode($mc->call('lists/subscribe', $params));
 
 // fclose($handle);
 
-// echo '{}';
