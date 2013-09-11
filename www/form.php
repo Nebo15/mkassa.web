@@ -14,7 +14,7 @@ $params = array(
     'double_optin' => false
 );
 
-if($_REQUEST['type'] == 'json') {
+if(isset($_REQUEST) && is_array($_REQUEST) && array_key_exists('json', $_REQUEST)) {
   echo json_encode($mc->call('lists/subscribe', $params));
 } else {
   echo <<<HTML
@@ -22,9 +22,11 @@ if($_REQUEST['type'] == 'json') {
   <html lang="en-US">
       <head>
           <meta charset="UTF-8">
-          <meta http-equiv="refresh" content="1;url=/">
+          <meta http-equiv="refresh" content="5;url=/">
           <script type="text/javascript">
-              window.location.href = "/"
+            setTimeout(function() {
+              window.location.href = "/";
+            }, 5000);
           </script>
           <title>Перенаправление</title>
       </head>
