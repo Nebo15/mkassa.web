@@ -219,7 +219,7 @@
         interval: 4000
       });
 
-      $('.subscription-form').submit(function() {
+      $('.subscription-form').submit(function(event) {
         event.preventDefault();
 
         var $this = $(this);
