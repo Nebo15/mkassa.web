@@ -17,6 +17,7 @@ $params = array(
 if(isset($_REQUEST) && is_array($_REQUEST) && array_key_exists('json', $_REQUEST)) {
   echo json_encode($mc->call('lists/subscribe', $params));
 } else {
+  $mc->call('lists/subscribe', $params);
   echo <<<HTML
   <!DOCTYPE HTML>
   <html lang="en-US">
