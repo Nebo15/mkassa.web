@@ -267,11 +267,12 @@ a:hover, a:focus {
 
 /* CONTENT: Subscription form */
 .subscription-form {
+
   text-align: left;
 }
 
 .subscription-form-row {
-  margin-bottom: 40px;
+  margin: 40px 0;
 }
 
 /* Loader spinner for any purposes */
